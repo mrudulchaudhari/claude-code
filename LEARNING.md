@@ -76,3 +76,10 @@ likewise
  #### WebFetch
  #### WebSearch
  #### Write
+
+
+ ## Planning
+Planning is when claude puts together its plan of action on how intense to implement some features and asks you to approve it.
+
+ ## Thinking
+ When we ask claude code to think about solutions before writing any code.
