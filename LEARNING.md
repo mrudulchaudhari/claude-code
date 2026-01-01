@@ -81,5 +81,24 @@ likewise
  ## Planning
 Planning is when claude puts together its plan of action on how intense to implement some features and asks you to approve it.
 
+we can switch to plan mode using 'alt + m'
+This will help interacting with discussions with claude and then it will give its solution, which then can be corrected like an response and we can give the permission for the relevant change scope.
+
+It is ideally preferred where the scope is bigger, logic is smaller and we need to apply changes at scale.
+
  ## Thinking
  When we ask claude code to think about solutions before writing any code.
+
+This would also work in the plan mode like the Planning section
+but here the prompt should have keywords like Think hard, implement, etc.
+Where it should be self explanatory but well communicated that this problem statement needs thinking
+
+It is ideally preferred where the logic is tough, thinking is required, scope doesnt matter, the code can be small, the changes might not be applied to every file but the logic impacts the overall performance of the site.
+
+### Key
+'Think hard' would trigger more thinking than 'Think', it would trigger smaller amount of thinking and reasoning
+
+we can use 'Think harder' to get more thinking and reasoning and 
+'ultrathink' to get the most thinking
+
+But this will proportionally use the tokens.
