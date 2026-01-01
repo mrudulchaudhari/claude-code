@@ -36,3 +36,43 @@ Used to edit memory files present in the project
 #### Project memory(CLAUDE.md)
 #### local memory of project (CLAUDE.local.md)
 #### user memory (.claude/CLAUDE.md)
+
+
+## Context
+Giving context to claude helps getting better results as the section of code it has to work in gets clearer.
+We can provide the context by tagging the files/folders available in the project. We can tag them using `@`.
+Example
+`@src\components\buttons\` this will set the folder buttons in `src\components\` as context.
+likewise
+ `@src\components\buttons\buttons.js` this will set the file buttons.js in `@src\components\buttons\` as context.
+
+
+ ### How to keep context clean
+ #### 1. Provide only necessary files and avoid unnecessary context.
+ #### 2. `/exit` - exits the chat session completely.
+ #### 3. `/clear` - clears the entire session context completely and chat history.
+ #### 4. `/compact` - compacts the chat & context into a small summary.
+ #### 5. Press ESC twice - Rewind to a previous point in the session.
+
+
+ ### Context Window
+ #### Claude code can handle 200K tokens worth of context, where 1 token is 3-4 characters in a word.
+ #### Efficiency of claude code drops as the context window fills, so to clean the context, use the methods given above.
+
+
+ ## Tools
+ ### Claude can do multiple types of tasks with the following tools:
+ #### Bash
+ #### Edit
+ #### Glob
+ #### grep
+ #### LS
+ #### MultiEdit
+ #### NotebookEdit
+ #### NotebookRead
+ #### Read
+ #### Task
+ #### TodoWrite
+ #### WebFetch
+ #### WebSearch
+ #### Write
