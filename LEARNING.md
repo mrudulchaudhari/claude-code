@@ -122,3 +122,18 @@ to create a custom command-
 #### 1. create a commands folder inside .claude/
 #### 2. create a markdown file (.md) named after the desired command name, example ('ui-component.md')
 #### 3. Inside the markdown file we made add the details desiredd for example task, variants, testing
+#### 4. Run it using /component-name and then one can specify what needs to be done ahead, otherwise it would let the AI decide what is ideal in the current scenario and will make changes accordingly
+
+To make custom commands more functional we can pass arguments, example parse $Argument and then later the task which is all mentioned in the markdown, this can be then called with the command name and an argument can be passed. We can store the passed argument in the markdown or basically the custom command using `[var-name] ` inside the markdown file
+Likewise
+we can also supply meta data on the top in the form of front data, which markdown allows us to add
+Example
+![alt text](image.png)
+which looks like 
+
+---
+description: something something
+argument hint: something | something1
+---
+
+When we make changes to the custom command file (markdown file), we need to restart the session to experience the changes using /exit
