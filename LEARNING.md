@@ -102,3 +102,23 @@ we can use 'Think harder' to get more thinking and reasoning and
 'ultrathink' to get the most thinking
 
 But this will proportionally use the tokens.
+
+
+## Slash Commands (Commands)
+We have already seen multiple commands above that help in improving the overall productivity and efficiency of claude code, example - /init, /terminal-setup, /clear, /exit, /compact, /memory
+
+When we type / on the claude terminal, we see a list of commands available to us by default from the claude, but we can also make our own custom commands.
+
+There are multiple commands that claude provides with a small description of what it does always there, so i will only write, that are frequently used.
+
+#### 1. `/model` - choose between various models in claude
+#### 2. `/permissions` - choose the changes that you want to allow claude to do automatically and thereafter you it wont ask again for the same in the chat, where as you may remove or add permissions manually inside the settings.local.json for claude permissions in .claude/ directory inside the project.
+
+
+### Custom commands
+we create custom command to reduce the writing of similar tasks, like giving a context, approach, color grade, for example when we build some frontend component, we are working in same directory, with similar css, so we need not write the context and UI again and again, we may just store it in some custom command
+
+to create a custom command-
+#### 1. create a commands folder inside .claude/
+#### 2. create a markdown file (.md) named after the desired command name, example ('ui-component.md')
+#### 3. Inside the markdown file we made add the details desiredd for example task, variants, testing
