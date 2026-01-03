@@ -147,3 +147,20 @@ it gives claude the ability to connect with external data sources, services and 
 |             |     |            |     |                 |
 | Claude Code | <-->| MCP Server | <-->| External Source |
 |_____________|     |____________|     |_________________|
+
+
+### MCP Servers
+
+#### Supabase MCP
+ _____________       ____________       _________________
+|             |     |  Supabase  |     |                 |
+| Claude Code | <-->| MCP Server | <-->|    Supabase     |
+|_____________|     |____________|     |_________________|
+
+
+#### Playwright MCP
+A MCP server that provides browser automation capabilities using Playwright. This server enables LLM to interact with webpages through structured accessibility snapshots, bypassing the need for screenshots or visually-tuned models.
+
+#### One can install these MCP servers on the local machine by checking out the exact commands of them in either the claude code documentation or of the MCP server documentation. As Anthropic (Parent company of Claude) developed MCP, one would find most MCP servers compatible with Claude Code.
+
+When you install MCP on our project, you would find a .mcp.json file inside the project file.
