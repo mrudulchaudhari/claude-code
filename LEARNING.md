@@ -211,3 +211,17 @@ When we create a pull request, claude code will automatically check the content 
 We can specify the and restructure what are the musts in the code for example readability, or having simple nested loops so that once a PR is raised, claude will assess and will give a general feedback but also specify if the code is readable, and if it is getting complexed with some nested loops and is there a way to handle it better.
 
 
+## Learnings till now (Summarized)
+### This is a personal experience which i got while playing with claude code in my terminal and also the github (during my internship)
+
+#### Check the code yourself - Blindly following claude wont help, it might get stuck in its own loop sometimes 
+Example - I got stuck between readability and parameter overuse section in my claude PR review where my code initiall was readable, and it asked me to do a certain changes in parameters (I removed a parameter that wasnt there) but then it asked me to add it back, and then once i added it back it asked me to remove, so this loop kept on going and I had to take a decision and give my code ahead.
+
+#### Context is key - Set a context window for better output
+Example - in my initial practices with AI, I spent high amount of tokens for simple tasks, where I could have simply mentioned the file so that it restricted its scope. So initially I was burning more tokens and also not getting adequate output XD. Clear and crisp context window gives better output and saves you thousands of tokens, sometimes millions (if working on a bigger project).
+
+#### Over reliance on AI - it took the control away from me from my code base
+The Project i was working on to test Cursor (Similar to Claude code), I created a project, and I took help to create the frontend, but then I lost control over the styling and scripting, because I kept cursor to make changes without reading what it was actually doing. Now I use Claude Code to help me by making me understand the structure, how an engineer thinks, and then do tasks that are redundant example creating unittests (which I know how to create and its just time consuming to create for all functions).
+
+#### Claude Code is too powerful - I learned it only while using it
+Claude code can literally think like an engineer, it can easily do the tasks that most freshers do (like me), it can create projects, keep track of code, especially Opus 4.5 can do really complex tasks, to design a system and then also hard code it, but what i realised working with any of the Agentic AI is that it can create mistakes, but then the scale at which it does correct things is also helpful. And with coming models, like Gemini 3 pro which is really good in algorithms, according to me the role of an engineer would be to supervise, manage these agents and subagents and would really help good programmers by increasing their efficiency by 10 times or even more.
