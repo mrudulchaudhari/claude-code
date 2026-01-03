@@ -128,7 +128,7 @@ To make custom commands more functional we can pass arguments, example parse $Ar
 Likewise
 we can also supply meta data on the top in the form of front data, which markdown allows us to add
 Example
-![alt text](image.png)
+![alt text](images/image.png)
 which looks like 
 
 ---
@@ -164,3 +164,21 @@ A MCP server that provides browser automation capabilities using Playwright. Thi
 #### One can install these MCP servers on the local machine by checking out the exact commands of them in either the claude code documentation or of the MCP server documentation. As Anthropic (Parent company of Claude) developed MCP, one would find most MCP servers compatible with Claude Code.
 
 When you install MCP on our project, you would find a .mcp.json file inside the project file.
+
+
+## Subagents
+Subagents allow us to create a whole team working on our project where each subagent can have its own expertise. Each subagent can be isolated and configured to work on particular tasks. Example we can create a subagent who expertises and onl works with Unittesting, likewise for security audits or a UX reviewer. All the subagents work independently from each other, they have their own system prompts and their own context windows. Claude code can delegate tasks to subagents.
+
+Example
+![alt text](images/image-2.png)
+
+We can create a new subagent using /agent
+![alt text](images/image-1.png)
+
+Then we can choose the scope of the subagent, Project or Personal
+we can also ask claude to generate the configuration or manually do the same.
+
+Once an agent is created one can see inside the .claude folder one can see the agents folder with the markdown file for the agent.
+We can mention the Agent in the markdown of a slash command, example if we creating a UI-UX reviewer subagent, we can invoke it last in the markdown of the custom command we created for /ui-component, this will invoke the subagent automatically if we use /ui-component to do any ui changes and our work will get reviewed by the UI-UX reviewer agent, similarly we can use the subagent to build unittests, etc.
+
+To see the changes we need to /exit and restart the claude session and then we can use the created changes
