@@ -182,3 +182,32 @@ Once an agent is created one can see inside the .claude folder one can see the a
 We can mention the Agent in the markdown of a slash command, example if we creating a UI-UX reviewer subagent, we can invoke it last in the markdown of the custom command we created for /ui-component, this will invoke the subagent automatically if we use /ui-component to do any ui changes and our work will get reviewed by the UI-UX reviewer agent, similarly we can use the subagent to build unittests, etc.
 
 To see the changes we need to /exit and restart the claude session and then we can use the created changes
+
+
+## Claude Code with Github
+We can integrate Claude Code with the github to automate PR reviews
+To do this we need Github CLI already installed on the system
+Once installed you need to login using
+`gh auth login`
+
+Then in the claude chat
+/install-github-app - to set up github actions for repository
+Then we can specify the repository
+Then it will ask us to install Claude Code on github - there we can install and authorize and also select the repositiories (all or selective) for claude code to work with.
+
+Once done we can see Claude and Claude review in github actions
+
+We can use Claude code to review a PR or work on an issue
+
+#### Issue example
+Example create an issue titled - Link on the logo mission and description - add link to logo in the navbar to redirect to the homepage
+
+and then create the issue, and in the comment say something like @claude can you fix this 
+and then the claude code will start working
+
+#### PR example
+When we create a pull request, claude code will automatically check the content inside (the changed files) and to provide better context, we can tag the issue (example #41) for claude to understand better. Once assessed, claude will provide a detailed feedback
+
+We can specify the and restructure what are the musts in the code for example readability, or having simple nested loops so that once a PR is raised, claude will assess and will give a general feedback but also specify if the code is readable, and if it is getting complexed with some nested loops and is there a way to handle it better.
+
+
