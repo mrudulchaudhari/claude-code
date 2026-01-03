@@ -137,3 +137,13 @@ argument hint: something | something1
 ---
 
 When we make changes to the custom command file (markdown file), we need to restart the session to experience the changes using /exit
+
+
+## MCP and MCP Server
+
+#### Model Context Protocol
+it gives claude the ability to connect with external data sources, services and API.
+ _____________       ____________       _________________
+|             |     |            |     |                 |
+| Claude Code | <-->| MCP Server | <-->| External Source |
+|_____________|     |____________|     |_________________|
